@@ -1,3 +1,20 @@
+
+$(document).ready(function() {
+    
+    var rellax = new Rellax('.rellax', {
+        speed: -2,
+      });
+
+});
+
+// window.addEventListener('scroll', function() {
+//     if (pageYOffset > 0) {
+//         document.querySelector('.nartistHeader__logo').style.padding = "1px 0px 0px 1px";
+//     } else {
+//         document.querySelector('.nartistHeader__logo').style.padding = "10px 0 10px 0";
+//     }
+//   });
+
 // Select
 $('#language').each(function(){
     // Variables

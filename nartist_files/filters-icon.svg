@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="17" height="16" viewBox="0 0 17 16">
+    <defs>
+        <clipPath id="pwoqa">
+            <path fill="#fff" d="M0 3h9.126A4.002 4.002 0 0 1 17 4a4 4 0 0 1-7.874 1H0z"/>
+        </clipPath>
+        <clipPath id="pwoqb">
+            <path fill="#fff" d="M17 11v2H7.874A4.002 4.002 0 0 1 0 12a4 4 0 0 1 7.874-1z"/>
+        </clipPath>
+    </defs>
+    <g>
+        <g>
+            <path fill="none" stroke="#000" stroke-miterlimit="20" stroke-width="4" d="M0 3h9.126A4.002 4.002 0 0 1 17 4a4 4 0 0 1-7.874 1H0z" clip-path="url(&quot;#pwoqa&quot;)"/>
+        </g>
+        <g>
+            <path fill="none" stroke="#000" stroke-miterlimit="20" stroke-width="4" d="M17 11v2H7.874A4.002 4.002 0 0 1 0 12a4 4 0 0 1 7.874-1z" clip-path="url(&quot;#pwoqb&quot;)"/>
+        </g>
+    </g>
+</svg>
