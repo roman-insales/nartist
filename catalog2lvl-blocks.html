@@ -33,7 +33,7 @@
           </a>
           <nav class="nartistHeader_nav">
             <a class="nartistHeader_link" href="catalog.html">Каталог</a>
-            <a class="nartistHeader_link" href="cart.html">О компании</a>
+            <a class="nartistHeader_link" href="#">О компании</a>
             <a class="nartistHeader_link" href="#">Контакты</a>
             <a class="nartistHeader_link" href="#">Блог</a>
           </nav>
@@ -145,62 +145,21 @@
   </section>
 
   <section class="catalogHeader">
-    <div class="catalogHeader_container container_wide" style="background-image: url('nartist_files/catalog_header1.jpg');">
+    <div class="catalogHeader_container container_wide" style="background-image: url('nartist_files/catalog_header2.jpg');">
         <div class="stripes" style="top: 0; left: 0;"></div>
         <div class="container">
             <h1 class="catalogHeader__title">Каталог</h1>
             <ul class="catalogHeader__breadcrumb">
-              <li><a href="#"> Коллекции </a></li>
+                <li class="breadcrumb-item home">
+                    <a class="breadcrumb-link" title="Главная" href="/">Коллекции</a>
+                </li>
+                <li class="breadcrumb-item">
+                    <a class="breadcrumb-link" href="/">Business Lady</a>
+                </li> 
             </ul>
         </div>
     </div>
-  </section>
-
-  <section class="collections">
-      <div class="collections_container container">
-          <div class="collections__more"> 
-              <ul class="collections__list row">
-                  <li class="smallitem__item cell-3" style="background-image: url('nartist_files/smallitem_bg1.jpg');">
-                      <a class="smallitem__link" href=""><img src="nartist_files/smallitem2.jpg" alt="" class="smallitem__img"><span class="smallitem__text">Business Lady</span></a>
-                  </li>
-                  <li class="smallitem__item cell-3" style="background-image: url('nartist_files/smallitem_bg1.jpg');">
-                      <a class="smallitem__link" href=""><img src="nartist_files/smallitem3.jpg" alt="" class="smallitem__img"><span class="smallitem__text">Make-Up</span></a>
-                  </li>
-                  <li class="smallitem__item cell-3" style="background-image: url('nartist_files/smallitem_bg1.jpg');">
-                      <a class="smallitem__link" href=""><img src="nartist_files/smallitem4.jpg" alt="" class="smallitem__img"><span class="smallitem__text">Night Shooters</span></a>
-                  </li>
-                  <li class="smallitem__item cell-3" style="background-image: url('nartist_files/smallitem_bg1.jpg');">
-                      <a class="smallitem__link" href=""><img src="nartist_files/smallitem2.jpg" alt="" class="smallitem__img"><span class="smallitem__text"> Lights of Capitals</span></a>
-                  </li>
-                  <li class="smallitem__item cell-3" style="background-image: url('nartist_files/smallitem_bg1.jpg');">
-                      <a class="smallitem__link" href=""><img src="nartist_files/smallitem3.jpg" alt="" class="smallitem__img"><span class="smallitem__text">Mirages</span></a>
-                  </li>
-                  <li class="smallitem__item cell-3" style="background-image: url('nartist_files/smallitem_bg1.jpg');">
-                      <a class="smallitem__link" href=""><img src="nartist_files/smallitem2.jpg" alt="" class="smallitem__img"><span class="smallitem__text">Chocolatier</span></a>
-                  </li>
-                  <li class="smallitem__item cell-3" style="background-image: url('nartist_files/smallitem_bg1.jpg');">
-                      <a class="smallitem__link" href=""><img src="nartist_files/smallitem3.jpg" alt="" class="smallitem__img"><span class="smallitem__text">Fire Lady</span></a>
-                  </li>
-                  <li class="smallitem__item cell-3" style="background-image: url('nartist_files/smallitem_bg1.jpg');">
-                      <a class="smallitem__link" href=""><img src="nartist_files/smallitem4.jpg" alt="" class="smallitem__img"><span class="smallitem__text">Business Lady</span></a>
-                  </li>
-                  <li class="smallitem__item cell-3" style="background-image: url('nartist_files/smallitem_bg1.jpg');">
-                      <a class="smallitem__link" href=""><img src="nartist_files/smallitem2.jpg" alt="" class="smallitem__img"><span class="smallitem__text">Make-Up</span></a>
-                  </li>
-                  <li class="smallitem__item cell-3" style="background-image: url('nartist_files/smallitem_bg1.jpg');">
-                      <a class="smallitem__link" href=""><img src="nartist_files/smallitem4.jpg" alt="" class="smallitem__img"><span class="smallitem__text">Night Shooters</span></a>
-                  </li>
-                  <li class="smallitem__item cell-3" style="background-image: url('nartist_files/smallitem_bg1.jpg');">
-                      <a class="smallitem__link" href=""><img src="nartist_files/smallitem3.jpg" alt="" class="smallitem__img"><span class="smallitem__text">Lights of Capitals</span></a>
-                  </li>
-                  <li class="smallitem__item cell-3" style="background-image: url('nartist_files/smallitem_bg1.jpg');">
-                      <a class="smallitem__link" href=""><img src="nartist_files/smallitem2.jpg" alt="" class="smallitem__img"><span class="smallitem__text">Mirages</span></a>
-                  </li>
-              </ul>
-              <button class="button_more">Загрузить ещё <span class="arrow-down"></span></button>
-          </div>
-      </div>
-  </section>
+  </section> 
 
   <section class="filters">
     <div class="filters_container container">
@@ -214,15 +173,13 @@
                 </span>
         
                 <button class="filter-toggle is-button-close" type="button" data-tab-anchor="price">
+                  
                 </button>
               </div>
               <div class="filter-items-wrapper is-tab-active" data-tab-target="price">
+                <div class="filter-body range-slider js-filter-range-slider-price">
                 
-        
-        <div class="filter-body range-slider js-filter-range-slider-price">
-          
-        </div> 
-        
+                </div> 
               </div>
             </div>
             <!-- / цена -->
@@ -248,7 +205,7 @@
                     </ul>
                 </div>
             </div>
-            <div class="filter js-filter-section  is-close-container" data-tabs-container="">
+            <div class="filter js-filter-section is-close-container" data-tabs-container="">
                 <div class="filter-title">
                     <span data-tab-anchor="1067700" class="is-button-close">
                     Состав
@@ -349,200 +306,200 @@
   <section class="collection">
     <div class="collection_container container">
 
-      <ul class="product__list blocks-fix">
-        <li class="product__wrap">
-          <div class="product">
-            <a class="product__img_wrap"  href="#">
-                <img class="product__img" src="nartist_files/prod_3.png" alt=" " />
-            </a>
-            <div class="product__info_wrap">
-              <span class="product__inscription">Business Lady</span>
-              <a class="product__link" href="#">Nartist 001 White 10g</a>
-              <div class="product__price_block">
-                <b class="product__price">300 р.</b>
-                <span class="product__price_old">400 р.</span>
+        <ul class="product__list blocks-fix">
+            <li class="product__wrap">
+              <div class="product">
+                <a class="product__img_wrap"  href="#">
+                    <img class="product__img" src="nartist_files/prod_3.png" alt=" " />
+                </a>
+                <div class="product__info_wrap">
+                  <span class="product__inscription">Business Lady</span>
+                  <a class="product__link" href="#">Nartist 001 White 10g</a>
+                  <div class="product__price_block">
+                    <b class="product__price">300 р.</b>
+                    <span class="product__price_old">400 р.</span>
+                  </div>
+                </div>
+                <div class="product__stick">-30%</div>
               </div>
-            </div>
-            <div class="product__stick">-30%</div>
-          </div>
-        </li>
-        <li class="product__wrap">
-          <div class="product">
-            <a class="product__img_wrap"  href="#">
-                <img class="product__img" src="nartist_files/prod_4.png" alt=" " />
-            </a>
-            <div class="product__info_wrap">
-              <span class="product__inscription">Hip-Hop</span>
-              <a class="product__link" href="#">NNartist 005 Misty Lilac 10g</a>
-              <div class="product__price_block">
-                <b class="product__price">300 р.</b>
-                <span class="product__price_old">400 р.</span>
+            </li>
+            <li class="product__wrap">
+              <div class="product">
+                <a class="product__img_wrap"  href="#">
+                    <img class="product__img" src="nartist_files/prod_4.png" alt=" " />
+                </a>
+                <div class="product__info_wrap">
+                  <span class="product__inscription">Hip-Hop</span>
+                  <a class="product__link" href="#">NNartist 005 Misty Lilac 10g</a>
+                  <div class="product__price_block">
+                    <b class="product__price">300 р.</b>
+                    <span class="product__price_old">400 р.</span>
+                  </div>
+                </div>
+                <div class="product__stick">-30%</div>
               </div>
-            </div>
-            <div class="product__stick">-30%</div>
-          </div>
-        </li>
-        <li class="product__wrap">
-          <div class="product">
-            <a class="product__img_wrap"  href="#">
-                <img class="product__img" src="nartist_files/prod_1.png" alt=" " />
-            </a>
-            <div class="product__info_wrap">
-              <span class="product__inscription">Business Lady</span>
-              <a class="product__link" href="#">Nartist 001 White 10g</a>
-              <div class="product__price_block">
-                <b class="product__price">300 р.</b>
+            </li>
+            <li class="product__wrap">
+              <div class="product">
+                <a class="product__img_wrap"  href="#">
+                    <img class="product__img" src="nartist_files/prod_1.png" alt=" " />
+                </a>
+                <div class="product__info_wrap">
+                  <span class="product__inscription">Business Lady</span>
+                  <a class="product__link" href="#">Nartist 001 White 10g</a>
+                  <div class="product__price_block">
+                    <b class="product__price">300 р.</b>
+                  </div>
+                </div>
+                <div class="product__stick">-30%</div>
               </div>
-            </div>
-            <div class="product__stick">-30%</div>
-          </div>
-          <div class="product_hidden">
-            <button class="product__fav bttn-favorite not-added" type="button" title="Добавить в избранное"></button>
-            <a class="product__img_wrap"  href="#">
-                <img class="product__img" src="nartist_files/prod_1.png" alt=" " />
-            </a>
-            <div class="product__info_wrap">
-              <span class="product__inscription">Business Lady</span>
-              <a class="product__link" href="#">Nartist 001 White 10g</a>
-              <div class="product__price_block">
-                <b class="product__price">300 р.</b>
+              <div class="product_hidden">
+                <button class="product__fav bttn-favorite not-added" type="button" title="Добавить в избранное"></button>
+                <a class="product__img_wrap"  href="#">
+                    <img class="product__img" src="nartist_files/prod_1.png" alt=" " />
+                </a>
+                <div class="product__info_wrap">
+                  <span class="product__inscription">Business Lady</span>
+                  <a class="product__link" href="#">Nartist 001 White 10g</a>
+                  <div class="product__price_block">
+                    <b class="product__price">300 р.</b>
+                  </div>
+                </div>
+                <div class="product__buy_wrap">  
+                  <button class="product__buy">Купить<span class="cart-icon"></span></button>
+                  <a class="product__fastbuy" href="">Купить в один клик</a>
+                </div>
               </div>
-            </div>
-            <div class="product__buy_wrap">  
-              <button class="product__buy">Купить<span class="cart-icon"></span></button>
-              <a class="product__fastbuy" href="">Купить в один клик</a>
-            </div>
-          </div>
-        </li>
-        <li class="product__wrap">
-          <div class="product">
-            <a class="product__img_wrap"  href="#">
-                <img class="product__img" src="nartist_files/prod_1.png" alt=" " />
-            </a>
-            <div class="product__info_wrap">
-              <span class="product__inscription">Business Lady</span>
-              <a class="product__link" href="#">Nartist 001 White 10g</a>
-              <div class="product__price_block">
-                <b class="product__price">300 р.</b>
+            </li>
+            <li class="product__wrap">
+              <div class="product">
+                <a class="product__img_wrap"  href="#">
+                    <img class="product__img" src="nartist_files/prod_1.png" alt=" " />
+                </a>
+                <div class="product__info_wrap">
+                  <span class="product__inscription">Business Lady</span>
+                  <a class="product__link" href="#">Nartist 001 White 10g</a>
+                  <div class="product__price_block">
+                    <b class="product__price">300 р.</b>
+                  </div>
+                </div>
+                <div class="product__stick">-30%</div>
               </div>
-            </div>
-            <div class="product__stick">-30%</div>
-          </div>
-          <div class="product_hidden">
-            <button class="product__fav bttn-favorite not-added" type="button" title="Добавить в избранное"></button>
-            <a class="product__img_wrap"  href="#">
-                <img class="product__img" src="nartist_files/prod_1.png" alt=" " />
-            </a>
-            <div class="product__info_wrap">
-              <span class="product__inscription">Business Lady</span>
-              <a class="product__link" href="#">Nartist 001 White 10g</a>
-              <div class="product__price_block">
-                <b class="product__price">300 р.</b>
+              <div class="product_hidden">
+                <button class="product__fav bttn-favorite not-added" type="button" title="Добавить в избранное"></button>
+                <a class="product__img_wrap"  href="#">
+                    <img class="product__img" src="nartist_files/prod_1.png" alt=" " />
+                </a>
+                <div class="product__info_wrap">
+                  <span class="product__inscription">Business Lady</span>
+                  <a class="product__link" href="#">Nartist 001 White 10g</a>
+                  <div class="product__price_block">
+                    <b class="product__price">300 р.</b>
+                  </div>
+                </div>
+                <div class="product__buy_wrap">  
+                  <button class="product__buy">Купить<span class="cart-icon"></span></button>
+                  <a class="product__fastbuy" href="">Купить в один клик</a>
+                </div>
               </div>
-            </div>
-            <div class="product__buy_wrap">  
-              <button class="product__buy">Купить<span class="cart-icon"></span></button>
-              <a class="product__fastbuy" href="">Купить в один клик</a>
-            </div>
-          </div>
-        </li>
-        <li class="product__wrap">
-          <div class="product">
-            <a class="product__img_wrap"  href="#">
-                <img class="product__img" src="nartist_files/prod_1.png" alt=" " />
-            </a>
-            <div class="product__info_wrap">
-              <span class="product__inscription">Business Lady</span>
-              <a class="product__link" href="#">Nartist 001 White 10g</a>
-              <div class="product__price_block">
-                <b class="product__price">300 р.</b>
+            </li>
+            <li class="product__wrap">
+              <div class="product">
+                <a class="product__img_wrap"  href="#">
+                    <img class="product__img" src="nartist_files/prod_1.png" alt=" " />
+                </a>
+                <div class="product__info_wrap">
+                  <span class="product__inscription">Business Lady</span>
+                  <a class="product__link" href="#">Nartist 001 White 10g</a>
+                  <div class="product__price_block">
+                    <b class="product__price">300 р.</b>
+                  </div>
+                </div>
+                <div class="product__stick">-30%</div>
               </div>
-            </div>
-            <div class="product__stick">-30%</div>
-          </div>
-          <div class="product_hidden">
-            <button class="product__fav bttn-favorite not-added" type="button" title="Добавить в избранное"></button>
-            <a class="product__img_wrap"  href="#">
-                <img class="product__img" src="nartist_files/prod_1.png" alt=" " />
-            </a>
-            <div class="product__info_wrap">
-              <span class="product__inscription">Business Lady</span>
-              <a class="product__link" href="#">Nartist 001 White 10g</a>
-              <div class="product__price_block">
-                <b class="product__price">300 р.</b>
+              <div class="product_hidden">
+                <button class="product__fav bttn-favorite not-added" type="button" title="Добавить в избранное"></button>
+                <a class="product__img_wrap"  href="#">
+                    <img class="product__img" src="nartist_files/prod_1.png" alt=" " />
+                </a>
+                <div class="product__info_wrap">
+                  <span class="product__inscription">Business Lady</span>
+                  <a class="product__link" href="#">Nartist 001 White 10g</a>
+                  <div class="product__price_block">
+                    <b class="product__price">300 р.</b>
+                  </div>
+                </div>
+                <div class="product__buy_wrap">  
+                  <button class="product__buy">Купить<span class="cart-icon"></span></button>
+                  <a class="product__fastbuy" href="">Купить в один клик</a>
+                </div>
               </div>
-            </div>
-            <div class="product__buy_wrap">  
-              <button class="product__buy">Купить<span class="cart-icon"></span></button>
-              <a class="product__fastbuy" href="">Купить в один клик</a>
-            </div>
-          </div>
-        </li>
-        <li class="product__wrap">
-          <div class="product">
-            <a class="product__img_wrap"  href="#">
-                <img class="product__img" src="nartist_files/prod_1.png" alt=" " />
-            </a>
-            <div class="product__info_wrap">
-              <span class="product__inscription">Business Lady</span>
-              <a class="product__link" href="#">Nartist 001 White 10g</a>
-              <div class="product__price_block">
-                <b class="product__price">300 р.</b>
+            </li>
+            <li class="product__wrap">
+              <div class="product">
+                <a class="product__img_wrap"  href="#">
+                    <img class="product__img" src="nartist_files/prod_1.png" alt=" " />
+                </a>
+                <div class="product__info_wrap">
+                  <span class="product__inscription">Business Lady</span>
+                  <a class="product__link" href="#">Nartist 001 White 10g</a>
+                  <div class="product__price_block">
+                    <b class="product__price">300 р.</b>
+                  </div>
+                </div>
+                <div class="product__stick">-30%</div>
               </div>
-            </div>
-            <div class="product__stick">-30%</div>
-          </div>
-          <div class="product_hidden">
-            <button class="product__fav bttn-favorite not-added" type="button" title="Добавить в избранное"></button>
-            <a class="product__img_wrap"  href="#">
-                <img class="product__img" src="nartist_files/prod_1.png" alt=" " />
-            </a>
-            <div class="product__info_wrap">
-              <span class="product__inscription">Business Lady</span>
-              <a class="product__link" href="#">Nartist 001 White 10g</a>
-              <div class="product__price_block">
-                <b class="product__price">300 р.</b>
+              <div class="product_hidden">
+                <button class="product__fav bttn-favorite not-added" type="button" title="Добавить в избранное"></button>
+                <a class="product__img_wrap"  href="#">
+                    <img class="product__img" src="nartist_files/prod_1.png" alt=" " />
+                </a>
+                <div class="product__info_wrap">
+                  <span class="product__inscription">Business Lady</span>
+                  <a class="product__link" href="#">Nartist 001 White 10g</a>
+                  <div class="product__price_block">
+                    <b class="product__price">300 р.</b>
+                  </div>
+                </div>
+                <div class="product__buy_wrap">  
+                  <button class="product__buy">Купить<span class="cart-icon"></span></button>
+                  <a class="product__fastbuy" href="">Купить в один клик</a>
+                </div>
               </div>
-            </div>
-            <div class="product__buy_wrap">  
-              <button class="product__buy">Купить<span class="cart-icon"></span></button>
-              <a class="product__fastbuy" href="">Купить в один клик</a>
-            </div>
-          </div>
-        </li>
-        <li class="product__wrap">
-          <div class="product">
-            <a class="product__img_wrap"  href="#">
-                <img class="product__img" src="nartist_files/prod_1.png" alt=" " />
-            </a>
-            <div class="product__info_wrap">
-              <span class="product__inscription">Business Lady</span>
-              <a class="product__link" href="#">Nartist 001 White 10g</a>
-              <div class="product__price_block">
-                <b class="product__price">300 р.</b>
+            </li>
+            <li class="product__wrap">
+              <div class="product">
+                <a class="product__img_wrap"  href="#">
+                    <img class="product__img" src="nartist_files/prod_1.png" alt=" " />
+                </a>
+                <div class="product__info_wrap">
+                  <span class="product__inscription">Business Lady</span>
+                  <a class="product__link" href="#">Nartist 001 White 10g</a>
+                  <div class="product__price_block">
+                    <b class="product__price">300 р.</b>
+                  </div>
+                </div>
+                <div class="product__stick">-30%</div>
               </div>
-            </div>
-            <div class="product__stick">-30%</div>
-          </div>
-          <div class="product_hidden">
-            <button class="product__fav bttn-favorite not-added" type="button" title="Добавить в избранное"></button>
-            <a class="product__img_wrap"  href="#">
-                <img class="product__img" src="nartist_files/prod_1.png" alt=" " />
-            </a>
-            <div class="product__info_wrap">
-              <span class="product__inscription">Business Lady</span>
-              <a class="product__link" href="#">Nartist 001 White 10g</a>
-              <div class="product__price_block">
-                <b class="product__price">300 р.</b>
+              <div class="product_hidden">
+                <button class="product__fav bttn-favorite not-added" type="button" title="Добавить в избранное"></button>
+                <a class="product__img_wrap"  href="#">
+                    <img class="product__img" src="nartist_files/prod_1.png" alt=" " />
+                </a>
+                <div class="product__info_wrap">
+                  <span class="product__inscription">Business Lady</span>
+                  <a class="product__link" href="#">Nartist 001 White 10g</a>
+                  <div class="product__price_block">
+                    <b class="product__price">300 р.</b>
+                  </div>
+                </div>
+                <div class="product__buy_wrap">  
+                  <button class="product__buy">Купить<span class="cart-icon"></span></button>
+                  <a class="product__fastbuy" href="">Купить в один клик</a>
+                </div>
               </div>
-            </div>
-            <div class="product__buy_wrap">  
-              <button class="product__buy">Купить<span class="cart-icon"></span></button>
-              <a class="product__fastbuy" href="">Купить в один клик</a>
-            </div>
-          </div>
-        </li>
-      </ul>
+            </li>
+          </ul>
 
       <div class="collection-size-and-pagination">
         <form class="collection-order-wrapper row flex-middle" action="/collection/platya-sarafany" method="get">
@@ -587,6 +544,77 @@
       </div>
     </div>
   </section> 
+
+  <section class="description">
+    <div class="description__container container">
+      <div class="row">
+        <div class="cell-4">
+          <figure class="description__round_wraper" >
+            <div class="description__round_bg" style="background-image: url('nartist_files/slide1.jpg');background-size: 207%;background-position: 68%;">
+
+            </div>
+            <div class="description__round_h" >Business Lady</div>
+            
+          </figure>
+        </div>
+        <div class="cell-8 description__right">
+          <h3 class="description__h">Описание категории</h3>
+          <p class="description__t">Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web designs. The passage is attributed to an unknown typesetter in the 15th century who is thought to have scrambled parts of Cicero's De Finibus Bonorum et Malorum for use in a type specimen book. It usually begins with:
+
+            “Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.”
+            The purpose of lorem ipsum is to create a natural looking block of text (sentence, paragraph, page, etc.) that doesn't distract from the layout. A practice not without controversy, laying out pages with meaningless filler text can be very useful when the focus is meant to be on design, not content.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="collections">
+    <div class="collections_container container">
+      
+      <h1 class="section_title">Другие коллекции</h1>
+      <span class="section_text">В нашем магазине вы найдете тщательно подобранные коллекции на любой вкус</span>
+        <div class="collections__more"> 
+            <ul class="collections__list row">
+                <li class="smallitem__item cell-3" style="background-image: url('nartist_files/smallitem_bg1.jpg');">
+                    <a class="smallitem__link" href=""><img src="nartist_files/smallitem2.jpg" alt="" class="smallitem__img"><span class="smallitem__text">Business Lady</span></a>
+                </li>
+                <li class="smallitem__item cell-3" style="background-image: url('nartist_files/smallitem_bg1.jpg');">
+                    <a class="smallitem__link" href=""><img src="nartist_files/smallitem3.jpg" alt="" class="smallitem__img"><span class="smallitem__text">Make-Up</span></a>
+                </li>
+                <li class="smallitem__item cell-3" style="background-image: url('nartist_files/smallitem_bg1.jpg');">
+                    <a class="smallitem__link" href=""><img src="nartist_files/smallitem4.jpg" alt="" class="smallitem__img"><span class="smallitem__text">Night Shooters</span></a>
+                </li>
+                <li class="smallitem__item cell-3" style="background-image: url('nartist_files/smallitem_bg1.jpg');">
+                    <a class="smallitem__link" href=""><img src="nartist_files/smallitem2.jpg" alt="" class="smallitem__img"><span class="smallitem__text"> Lights of Capitals</span></a>
+                </li>
+                <li class="smallitem__item cell-3" style="background-image: url('nartist_files/smallitem_bg1.jpg');">
+                    <a class="smallitem__link" href=""><img src="nartist_files/smallitem3.jpg" alt="" class="smallitem__img"><span class="smallitem__text">Mirages</span></a>
+                </li>
+                <li class="smallitem__item cell-3" style="background-image: url('nartist_files/smallitem_bg1.jpg');">
+                    <a class="smallitem__link" href=""><img src="nartist_files/smallitem2.jpg" alt="" class="smallitem__img"><span class="smallitem__text">Chocolatier</span></a>
+                </li>
+                <li class="smallitem__item cell-3" style="background-image: url('nartist_files/smallitem_bg1.jpg');">
+                    <a class="smallitem__link" href=""><img src="nartist_files/smallitem3.jpg" alt="" class="smallitem__img"><span class="smallitem__text">Fire Lady</span></a>
+                </li>
+                <li class="smallitem__item cell-3" style="background-image: url('nartist_files/smallitem_bg1.jpg');">
+                    <a class="smallitem__link" href=""><img src="nartist_files/smallitem4.jpg" alt="" class="smallitem__img"><span class="smallitem__text">Business Lady</span></a>
+                </li>
+                <li class="smallitem__item cell-3" style="background-image: url('nartist_files/smallitem_bg1.jpg');">
+                    <a class="smallitem__link" href=""><img src="nartist_files/smallitem2.jpg" alt="" class="smallitem__img"><span class="smallitem__text">Make-Up</span></a>
+                </li>
+                <li class="smallitem__item cell-3" style="background-image: url('nartist_files/smallitem_bg1.jpg');">
+                    <a class="smallitem__link" href=""><img src="nartist_files/smallitem4.jpg" alt="" class="smallitem__img"><span class="smallitem__text">Night Shooters</span></a>
+                </li>
+                <li class="smallitem__item cell-3" style="background-image: url('nartist_files/smallitem_bg1.jpg');">
+                    <a class="smallitem__link" href=""><img src="nartist_files/smallitem3.jpg" alt="" class="smallitem__img"><span class="smallitem__text">Lights of Capitals</span></a>
+                </li>
+                <li class="smallitem__item cell-3" style="background-image: url('nartist_files/smallitem_bg1.jpg');">
+                    <a class="smallitem__link" href=""><img src="nartist_files/smallitem2.jpg" alt="" class="smallitem__img"><span class="smallitem__text">Mirages</span></a>
+                </li>
+            </ul>
+            <button class="button_more">Загрузить ещё <span class="arrow-down"></span></button>
+        </div>
+    </div>
+</section>
 
   <section class="decor">
     <div class="decor_container container">

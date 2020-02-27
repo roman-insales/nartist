@@ -12958,17 +12958,17 @@ button.option-value {
     border-left: 0;
     border-right: 0; }
 
-/* line 214, buttons.scss */
+/* line 214, buttons.scss 
 input.quantity-input {
-  background-color: transparent !important;
+  background-color: transparent;
   color: #1e1e1e; }
-
-/* line 219, buttons.scss */
+*/
+/* line 219, buttons.scss 
 .quantity .quantity-control {
   background-color: transparent !important;
   color: var(--color_button_bg) !important;
   border-color: var(--color_button_bg) !important; }
-
+*/
 /* line 225, buttons.scss */
 .quantity input.quantity-input {
   border-color: var(--color_button_bg) !important; }
@@ -17913,45 +17913,8 @@ li.filter-item {
   position: relative;
   cursor: pointer;
   padding-right: 25px; }
-  /* line 721, main.scss */
-  .collection-filter [data-tab-anchor]:before, .collection-filter [data-tab-anchor]:after {
-    position: absolute;
-    top: 50%;
-    content: '';
-    height: 1px;
-    width: 7px; }
-  /* line 730, main.scss */
-  .collection-filter [data-tab-anchor]:before {
-    right: 0;
-    -moz-transform: rotate(135deg);
-    -webkit-transform: rotate(135deg);
-    -o-transform: rotate(135deg);
-    -ms-transform: rotate(135deg);
-    transform: rotate(135deg); }
-  /* line 739, main.scss */
-  .collection-filter [data-tab-anchor]:after {
-    right: 5px;
-    -moz-transform: rotate(45deg);
-    -webkit-transform: rotate(45deg);
-    -o-transform: rotate(45deg);
-    -ms-transform: rotate(45deg);
-    transform: rotate(45deg); }
-  /* line 749, main.scss */
-  .collection-filter [data-tab-anchor].is-button-active:before {
-    right: 0;
-    -moz-transform: rotate(45deg);
-    -webkit-transform: rotate(45deg);
-    -o-transform: rotate(45deg);
-    -ms-transform: rotate(45deg);
-    transform: rotate(45deg); }
-  /* line 758, main.scss */
-  .collection-filter [data-tab-anchor].is-button-active:after {
-    right: 5px;
-    -moz-transform: rotate(135deg);
-    -webkit-transform: rotate(135deg);
-    -o-transform: rotate(135deg);
-    -ms-transform: rotate(135deg);
-    transform: rotate(135deg); }
+
+
 /* line 769, main.scss */
 .collection-filter [data-show-products] {
   z-index: 1000;

@@ -33,7 +33,7 @@
           </a>
           <nav class="nartistHeader_nav">
             <a class="nartistHeader_link" href="catalog.html">Каталог</a>
-            <a class="nartistHeader_link" href="cart.html">О компании</a>
+            <a class="nartistHeader_link" href="#">О компании</a>
             <a class="nartistHeader_link" href="#">Контакты</a>
             <a class="nartistHeader_link" href="#">Блог</a>
           </nav>
@@ -120,7 +120,7 @@
                   <a class="bttn-underline" href="catalog1lvl-list.html">Каталог1уровень (список)</a> 
                 </li>
                 <li class="promo__nav_link">
-                  <a class="bttn-underline" href="catalog2lvl-blocks.html">Каталог2уровень (блоки)</a> 
+                <a class="bttn-underline" href="/modeliruyuschie-geli">Моделирующие гели</a> 
                 </li>
                 <li class="promo__nav_link">
                 <a class="bttn-underline" href="/fartuki-aksessuary">Фартуки, аксессуары</a> 
@@ -214,6 +214,7 @@
                 </span>
         
                 <button class="filter-toggle is-button-close" type="button" data-tab-anchor="price">
+                  
                 </button>
               </div>
               <div class="filter-items-wrapper is-tab-active" data-tab-target="price">
@@ -221,7 +222,14 @@
         
         <div class="filter-body range-slider js-filter-range-slider-price">
           
-        </div> 
+        </div>
+        
+        
+        
+        
+        
+        
+        
         
               </div>
             </div>
@@ -349,199 +357,400 @@
   <section class="collection">
     <div class="collection_container container">
 
-      <ul class="product__list blocks-fix">
-        <li class="product__wrap">
+
+      <ul class="product__list">
+        <li class="product__wrap_list">
           <div class="product">
             <a class="product__img_wrap"  href="#">
                 <img class="product__img" src="nartist_files/prod_3.png" alt=" " />
             </a>
+            <div class="product__stick">-30%</div>
             <div class="product__info_wrap">
               <span class="product__inscription">Business Lady</span>
               <a class="product__link" href="#">Nartist 001 White 10g</a>
-              <div class="product__price_block">
+            </div>
+            
+            <div class="product__price_block">
                 <b class="product__price">300 р.</b>
                 <span class="product__price_old">400 р.</span>
               </div>
+            <div data-quantity="" class="quantity is-basket">
+                <div class="quantity-controls product__buy">
+                    <button data-quantity-change="-1" class="quantity-control bttn-count" type="button">
+                      -
+                    </button>
+                    <input class="quantity-input" type="text" name="cart[quantity][210491053]" value="10">
+                    <button data-quantity-change="1" class="quantity-control bttn-count" type="button">
+                      +
+                    </button>
+                </div>
             </div>
-            <div class="product__stick">-30%</div>
+            <b class="product__price_total">3000 р.</b>
+            <div class="product__buy_wrap">  
+                <button class="product__buy">Купить<span class="cart-icon"></span></button>
+                <a class="product__fastbuy" href="">Купить в один клик</a>
+            </div>
+            <button class="product__fav bttn-favorite is-added" type="button" title="Добавить в избранное"></button>
           </div>
-        </li>
-        <li class="product__wrap">
-          <div class="product">
+          <div class="product_hidden">
             <a class="product__img_wrap"  href="#">
-                <img class="product__img" src="nartist_files/prod_4.png" alt=" " />
+                <img class="product__img" src="nartist_files/prod_3.png" alt=" " />
             </a>
+            <div class="product__stick">-30%</div>
             <div class="product__info_wrap">
-              <span class="product__inscription">Hip-Hop</span>
-              <a class="product__link" href="#">NNartist 005 Misty Lilac 10g</a>
-              <div class="product__price_block">
+              <span class="product__inscription">Business Lady</span>
+              <a class="product__link" href="#">Nartist 001 White 10g</a>
+            </div>
+            
+            <div class="product__price_block">
                 <b class="product__price">300 р.</b>
                 <span class="product__price_old">400 р.</span>
               </div>
+            <div data-quantity="" class="quantity is-basket">
+                <div class="quantity-controls product__buy">
+                    <button data-quantity-change="-1" class="quantity-control bttn-count" type="button">
+                      -
+                    </button>
+                    <input class="quantity-input" type="text" name="cart[quantity][210491053]" value="10">
+                    <button data-quantity-change="1" class="quantity-control bttn-count" type="button">
+                      +
+                    </button>
+                </div>
             </div>
-            <div class="product__stick">-30%</div>
-          </div>
-        </li>
-        <li class="product__wrap">
-          <div class="product">
-            <a class="product__img_wrap"  href="#">
-                <img class="product__img" src="nartist_files/prod_1.png" alt=" " />
-            </a>
-            <div class="product__info_wrap">
-              <span class="product__inscription">Business Lady</span>
-              <a class="product__link" href="#">Nartist 001 White 10g</a>
-              <div class="product__price_block">
-                <b class="product__price">300 р.</b>
-              </div>
-            </div>
-            <div class="product__stick">-30%</div>
-          </div>
-          <div class="product_hidden">
-            <button class="product__fav bttn-favorite not-added" type="button" title="Добавить в избранное"></button>
-            <a class="product__img_wrap"  href="#">
-                <img class="product__img" src="nartist_files/prod_1.png" alt=" " />
-            </a>
-            <div class="product__info_wrap">
-              <span class="product__inscription">Business Lady</span>
-              <a class="product__link" href="#">Nartist 001 White 10g</a>
-              <div class="product__price_block">
-                <b class="product__price">300 р.</b>
-              </div>
-            </div>
+            <b class="product__price_total">3000 р.</b>
             <div class="product__buy_wrap">  
-              <button class="product__buy">Купить<span class="cart-icon"></span></button>
-              <a class="product__fastbuy" href="">Купить в один клик</a>
+                <button class="product__buy">Купить<span class="cart-icon"></span></button>
+                <a class="product__fastbuy" href="">Купить в один клик</a>
             </div>
+            <button class="product__fav bttn-favorite is-added" type="button" title="Добавить в избранное"></button>
           </div>
         </li>
-        <li class="product__wrap">
-          <div class="product">
-            <a class="product__img_wrap"  href="#">
-                <img class="product__img" src="nartist_files/prod_1.png" alt=" " />
-            </a>
-            <div class="product__info_wrap">
-              <span class="product__inscription">Business Lady</span>
-              <a class="product__link" href="#">Nartist 001 White 10g</a>
-              <div class="product__price_block">
-                <b class="product__price">300 р.</b>
+        <li class="product__wrap_list">
+            <div class="product">
+              <a class="product__img_wrap"  href="#">
+                  <img class="product__img" src="nartist_files/prod_1.png" alt=" " />
+              </a>
+              <div class="product__stick">New</div>
+              <div class="product__info_wrap">
+                <span class="product__inscription">Business Lady</span>
+                <a class="product__link" href="#">Nartist 005 Misty Lilac 10g</a>
               </div>
-            </div>
-            <div class="product__stick">-30%</div>
-          </div>
-          <div class="product_hidden">
-            <button class="product__fav bttn-favorite not-added" type="button" title="Добавить в избранное"></button>
-            <a class="product__img_wrap"  href="#">
-                <img class="product__img" src="nartist_files/prod_1.png" alt=" " />
-            </a>
-            <div class="product__info_wrap">
-              <span class="product__inscription">Business Lady</span>
-              <a class="product__link" href="#">Nartist 001 White 10g</a>
               <div class="product__price_block">
-                <b class="product__price">300 р.</b>
+                <b class="product__price">400 р.</b>
+                <span class="product__price_old">500 р.</span>
               </div>
+              
+              <div data-quantity="" class="quantity is-basket">
+                  <div class="quantity-controls product__buy">
+                      <button data-quantity-change="-1" class="quantity-control bttn-count" type="button">
+                        -
+                      </button>
+                      <input class="quantity-input" type="text" name="cart[quantity][210491053]" value="10">
+                      <button data-quantity-change="1" class="quantity-control bttn-count" type="button">
+                        +
+                      </button>
+                  </div>
+              </div>
+              <b class="product__price_total">4000 р.</b>
+              <div class="product__buy_wrap">  
+                  <button class="product__buy">Купить<span class="cart-icon"></span></button>
+                  <a class="product__fastbuy" href="">Купить в один клик</a>
+              </div>
+              <button class="product__fav bttn-favorite not-added" type="button" title="Добавить в избранное"></button>
             </div>
-            <div class="product__buy_wrap">  
-              <button class="product__buy">Купить<span class="cart-icon"></span></button>
-              <a class="product__fastbuy" href="">Купить в один клик</a>
+            <div class="product_hidden">
+                <a class="product__img_wrap"  href="#">
+                    <img class="product__img" src="nartist_files/prod_1.png" alt=" " />
+                </a>
+                <div class="product__stick">New</div>
+                <div class="product__info_wrap">
+                  <span class="product__inscription">Business Lady</span>
+                  <a class="product__link" href="#">Nartist 005 Misty Lilac 10g</a>
+                </div>
+                <div class="product__price_block">
+                  <b class="product__price">400 р.</b>
+                  <span class="product__price_old">500 р.</span>
+                </div>
+                
+                <div data-quantity="" class="quantity is-basket">
+                    <div class="quantity-controls product__buy">
+                        <button data-quantity-change="-1" class="quantity-control bttn-count" type="button">
+                          -
+                        </button>
+                        <input class="quantity-input" type="text" name="cart[quantity][210491053]" value="10">
+                        <button data-quantity-change="1" class="quantity-control bttn-count" type="button">
+                          +
+                        </button>
+                    </div>
+                </div>
+                <b class="product__price_total">4000 р.</b>
+                <div class="product__buy_wrap">  
+                    <button class="product__buy">Купить<span class="cart-icon"></span></button>
+                    <a class="product__fastbuy" href="">Купить в один клик</a>
+                </div>
+                <button class="product__fav bttn-favorite not-added" type="button" title="Добавить в избранное"></button>
             </div>
-          </div>
-        </li>
-        <li class="product__wrap">
-          <div class="product">
-            <a class="product__img_wrap"  href="#">
-                <img class="product__img" src="nartist_files/prod_1.png" alt=" " />
-            </a>
-            <div class="product__info_wrap">
-              <span class="product__inscription">Business Lady</span>
-              <a class="product__link" href="#">Nartist 001 White 10g</a>
+        </li>    
+        <li class="product__wrap_list">
+            <div class="product">
+              <a class="product__img_wrap"  href="#">
+                  <img class="product__img" src="nartist_files/prod_3.png" alt=" " />
+              </a>
+              <div class="product__stick">-30%</div>
+              <div class="product__info_wrap">
+                <span class="product__inscription">Business Lady</span>
+                <a class="product__link" href="#">Nartist 001 White 10g</a>
+              </div>
+              
               <div class="product__price_block">
-                <b class="product__price">300 р.</b>
+                  <b class="product__price">300 р.</b>
+                  <span class="product__price_old">400 р.</span>
+                </div>
+              <div data-quantity="" class="quantity is-basket">
+                  <div class="quantity-controls product__buy">
+                      <button data-quantity-change="-1" class="quantity-control bttn-count" type="button">
+                        -
+                      </button>
+                      <input class="quantity-input" type="text" name="cart[quantity][210491053]" value="10">
+                      <button data-quantity-change="1" class="quantity-control bttn-count" type="button">
+                        +
+                      </button>
+                  </div>
               </div>
+              <b class="product__price_total">3000 р.</b>
+              <div class="product__buy_wrap">  
+                  <button class="product__buy">Купить<span class="cart-icon"></span></button>
+                  <a class="product__fastbuy" href="">Купить в один клик</a>
+              </div>
+              <button class="product__fav bttn-favorite not-added" type="button" title="Добавить в избранное"></button>
             </div>
-            <div class="product__stick">-30%</div>
-          </div>
-          <div class="product_hidden">
-            <button class="product__fav bttn-favorite not-added" type="button" title="Добавить в избранное"></button>
-            <a class="product__img_wrap"  href="#">
-                <img class="product__img" src="nartist_files/prod_1.png" alt=" " />
-            </a>
-            <div class="product__info_wrap">
-              <span class="product__inscription">Business Lady</span>
-              <a class="product__link" href="#">Nartist 001 White 10g</a>
+            <div class="product_hidden">
+                <a class="product__img_wrap"  href="#">
+                    <img class="product__img" src="nartist_files/prod_3.png" alt=" " />
+                </a>
+                <div class="product__stick">-30%</div>
+                <div class="product__info_wrap">
+                  <span class="product__inscription">Business Lady</span>
+                  <a class="product__link" href="#">Nartist 001 White 10g</a>
+                </div>
+                
+                <div class="product__price_block">
+                    <b class="product__price">300 р.</b>
+                    <span class="product__price_old">400 р.</span>
+                  </div>
+                <div data-quantity="" class="quantity is-basket">
+                    <div class="quantity-controls product__buy">
+                        <button data-quantity-change="-1" class="quantity-control bttn-count" type="button">
+                          -
+                        </button>
+                        <input class="quantity-input" type="text" name="cart[quantity][210491053]" value="10">
+                        <button data-quantity-change="1" class="quantity-control bttn-count" type="button">
+                          +
+                        </button>
+                    </div>
+                </div>
+                <b class="product__price_total">3000 р.</b>
+                <div class="product__buy_wrap">  
+                    <button class="product__buy">Купить<span class="cart-icon"></span></button>
+                    <a class="product__fastbuy" href="">Купить в один клик</a>
+                </div>
+                <button class="product__fav bttn-favorite not-added" type="button" title="Добавить в избранное"></button>
+            </div>
+          </li>
+          <li class="product__wrap_list">
+              <div class="product">
+                <a class="product__img_wrap"  href="#">
+                    <img class="product__img" src="nartist_files/prod_1.png" alt=" " />
+                </a>
+                <div class="product__stick">New</div>
+                <div class="product__info_wrap">
+                  <span class="product__inscription">Business Lady</span>
+                  <a class="product__link" href="#">Nartist 005 Misty Lilac 10g</a>
+                </div>
+                <div class="product__price_block">
+                  <b class="product__price">400 р.</b>
+                  <span class="product__price_old">500 р.</span>
+                </div>
+                
+                <div data-quantity="" class="quantity is-basket">
+                    <div class="quantity-controls product__buy">
+                        <button data-quantity-change="-1" class="quantity-control bttn-count" type="button">
+                          -
+                        </button>
+                        <input class="quantity-input" type="text" name="cart[quantity][210491053]" value="10">
+                        <button data-quantity-change="1" class="quantity-control bttn-count" type="button">
+                          +
+                        </button>
+                    </div>
+                </div>
+                <b class="product__price_total">4000 р.</b>
+                <div class="product__buy_wrap">  
+                    <button class="product__buy">Купить<span class="cart-icon"></span></button>
+                    <a class="product__fastbuy" href="">Купить в один клик</a>
+                </div>
+                <button class="product__fav bttn-favorite not-added" type="button" title="Добавить в избранное"></button>
+              </div>
+              <div class="product_hidden">
+                <a class="product__img_wrap"  href="#">
+                    <img class="product__img" src="nartist_files/prod_1.png" alt=" " />
+                </a>
+                <div class="product__stick">New</div>
+                <div class="product__info_wrap">
+                  <span class="product__inscription">Business Lady</span>
+                  <a class="product__link" href="#">Nartist 005 Misty Lilac 10g</a>
+                </div>
+                <div class="product__price_block">
+                  <b class="product__price">400 р.</b>
+                  <span class="product__price_old">500 р.</span>
+                </div>
+                
+                <div data-quantity="" class="quantity is-basket">
+                    <div class="quantity-controls product__buy">
+                        <button data-quantity-change="-1" class="quantity-control bttn-count" type="button">
+                          -
+                        </button>
+                        <input class="quantity-input" type="text" name="cart[quantity][210491053]" value="10">
+                        <button data-quantity-change="1" class="quantity-control bttn-count" type="button">
+                          +
+                        </button>
+                    </div>
+                </div>
+                <b class="product__price_total">4000 р.</b>
+                <div class="product__buy_wrap">  
+                    <button class="product__buy">Купить<span class="cart-icon"></span></button>
+                    <a class="product__fastbuy" href="">Купить в один клик</a>
+                </div>
+                <button class="product__fav bttn-favorite not-added" type="button" title="Добавить в избранное"></button>
+              </div>
+          </li>  
+          <li class="product__wrap_list">
+            <div class="product">
+              <a class="product__img_wrap"  href="#">
+                  <img class="product__img" src="nartist_files/prod_3.png" alt=" " />
+              </a>
+              <div class="product__stick">-30%</div>
+              <div class="product__info_wrap">
+                <span class="product__inscription">Business Lady</span>
+                <a class="product__link" href="#">Nartist 001 White 10g</a>
+              </div>
+              
               <div class="product__price_block">
-                <b class="product__price">300 р.</b>
+                  <b class="product__price">300 р.</b> 
+                </div>
+              <div data-quantity="" class="quantity is-basket">
+                  <div class="quantity-controls product__buy">
+                      <button data-quantity-change="-1" class="quantity-control bttn-count" type="button">
+                        -
+                      </button>
+                      <input class="quantity-input" type="text" name="cart[quantity][210491053]" value="10">
+                      <button data-quantity-change="1" class="quantity-control bttn-count" type="button">
+                        +
+                      </button>
+                  </div>
               </div>
-            </div>
-            <div class="product__buy_wrap">  
-              <button class="product__buy">Купить<span class="cart-icon"></span></button>
-              <a class="product__fastbuy" href="">Купить в один клик</a>
-            </div>
-          </div>
-        </li>
-        <li class="product__wrap">
-          <div class="product">
-            <a class="product__img_wrap"  href="#">
-                <img class="product__img" src="nartist_files/prod_1.png" alt=" " />
-            </a>
-            <div class="product__info_wrap">
-              <span class="product__inscription">Business Lady</span>
-              <a class="product__link" href="#">Nartist 001 White 10g</a>
-              <div class="product__price_block">
-                <b class="product__price">300 р.</b>
+              <b class="product__price_total">3000 р.</b>
+              <div class="product__buy_wrap">  
+                  <button class="product__buy">Купить<span class="cart-icon"></span></button>
+                  <a class="product__fastbuy" href="">Купить в один клик</a>
               </div>
+              <button class="product__fav bttn-favorite not-added" type="button" title="Добавить в избранное"></button>
             </div>
-            <div class="product__stick">-30%</div>
-          </div>
-          <div class="product_hidden">
-            <button class="product__fav bttn-favorite not-added" type="button" title="Добавить в избранное"></button>
-            <a class="product__img_wrap"  href="#">
-                <img class="product__img" src="nartist_files/prod_1.png" alt=" " />
-            </a>
-            <div class="product__info_wrap">
-              <span class="product__inscription">Business Lady</span>
-              <a class="product__link" href="#">Nartist 001 White 10g</a>
-              <div class="product__price_block">
-                <b class="product__price">300 р.</b>
+            <div class="product_hidden">
+                <a class="product__img_wrap"  href="#">
+                    <img class="product__img" src="nartist_files/prod_3.png" alt=" " />
+                </a>
+                <div class="product__stick">-30%</div>
+                <div class="product__info_wrap">
+                  <span class="product__inscription">Business Lady</span>
+                  <a class="product__link" href="#">Nartist 001 White 10g</a>
+                </div>
+                
+                <div class="product__price_block">
+                    <b class="product__price">300 р.</b> 
+                  </div>
+                <div data-quantity="" class="quantity is-basket">
+                    <div class="quantity-controls product__buy">
+                        <button data-quantity-change="-1" class="quantity-control bttn-count" type="button">
+                          -
+                        </button>
+                        <input class="quantity-input" type="text" name="cart[quantity][210491053]" value="10">
+                        <button data-quantity-change="1" class="quantity-control bttn-count" type="button">
+                          +
+                        </button>
+                    </div>
+                </div>
+                <b class="product__price_total">3000 р.</b>
+                <div class="product__buy_wrap">  
+                    <button class="product__buy">Купить<span class="cart-icon"></span></button>
+                    <a class="product__fastbuy" href="">Купить в один клик</a>
+                </div>
+                <button class="product__fav bttn-favorite not-added" type="button" title="Добавить в избранное"></button>
+            </div>
+          </li>
+          <li class="product__wrap_list">
+              <div class="product">
+                <a class="product__img_wrap"  href="#">
+                    <img class="product__img" src="nartist_files/prod_1.png" alt=" " />
+                </a>
+                <div class="product__stick">New</div>
+                <div class="product__info_wrap">
+                  <span class="product__inscription">Business Lady</span>
+                  <a class="product__link" href="#">Nartist 005 Misty Lilac 10g</a>
+                </div>
+                <div class="product__price_block">
+                  <b class="product__price">550 р.</b> 
+                </div>
+                
+                <div data-quantity="" class="quantity is-basket">
+                    <div class="quantity-controls product__buy">
+                        <button data-quantity-change="-1" class="quantity-control bttn-count" type="button">
+                          -
+                        </button>
+                        <input class="quantity-input" type="text" name="cart[quantity][210491053]" value="10">
+                        <button data-quantity-change="1" class="quantity-control bttn-count" type="button">
+                          +
+                        </button>
+                    </div>
+                </div>
+                <b class="product__price_total">4000 р.</b>
+                <div class="product__buy_wrap">  
+                    <button class="product__buy">Купить<span class="cart-icon"></span></button>
+                    <a class="product__fastbuy" href="">Купить в один клик</a>
+                </div>
+                <button class="product__fav bttn-favorite not-added" type="button" title="Добавить в избранное"></button>
               </div>
-            </div>
-            <div class="product__buy_wrap">  
-              <button class="product__buy">Купить<span class="cart-icon"></span></button>
-              <a class="product__fastbuy" href="">Купить в один клик</a>
-            </div>
-          </div>
-        </li>
-        <li class="product__wrap">
-          <div class="product">
-            <a class="product__img_wrap"  href="#">
-                <img class="product__img" src="nartist_files/prod_1.png" alt=" " />
-            </a>
-            <div class="product__info_wrap">
-              <span class="product__inscription">Business Lady</span>
-              <a class="product__link" href="#">Nartist 001 White 10g</a>
-              <div class="product__price_block">
-                <b class="product__price">300 р.</b>
+              <div class="product_hidden">
+                <a class="product__img_wrap"  href="#">
+                    <img class="product__img" src="nartist_files/prod_1.png" alt=" " />
+                </a>
+                <div class="product__stick">New</div>
+                <div class="product__info_wrap">
+                  <span class="product__inscription">Business Lady</span>
+                  <a class="product__link" href="#">Nartist 005 Misty Lilac 10g</a>
+                </div>
+                <div class="product__price_block">
+                  <b class="product__price">550 р.</b> 
+                </div>
+                
+                <div data-quantity="" class="quantity is-basket">
+                    <div class="quantity-controls product__buy">
+                        <button data-quantity-change="-1" class="quantity-control bttn-count" type="button">
+                          -
+                        </button>
+                        <input class="quantity-input" type="text" name="cart[quantity][210491053]" value="10">
+                        <button data-quantity-change="1" class="quantity-control bttn-count" type="button">
+                          +
+                        </button>
+                    </div>
+                </div>
+                <b class="product__price_total">4000 р.</b>
+                <div class="product__buy_wrap">  
+                    <button class="product__buy">Купить<span class="cart-icon"></span></button>
+                    <a class="product__fastbuy" href="">Купить в один клик</a>
+                </div>
+                <button class="product__fav bttn-favorite not-added" type="button" title="Добавить в избранное"></button>
               </div>
-            </div>
-            <div class="product__stick">-30%</div>
-          </div>
-          <div class="product_hidden">
-            <button class="product__fav bttn-favorite not-added" type="button" title="Добавить в избранное"></button>
-            <a class="product__img_wrap"  href="#">
-                <img class="product__img" src="nartist_files/prod_1.png" alt=" " />
-            </a>
-            <div class="product__info_wrap">
-              <span class="product__inscription">Business Lady</span>
-              <a class="product__link" href="#">Nartist 001 White 10g</a>
-              <div class="product__price_block">
-                <b class="product__price">300 р.</b>
-              </div>
-            </div>
-            <div class="product__buy_wrap">  
-              <button class="product__buy">Купить<span class="cart-icon"></span></button>
-              <a class="product__fastbuy" href="">Купить в один клик</a>
-            </div>
-          </div>
-        </li>
+          </li>  
       </ul>
 
       <div class="collection-size-and-pagination">
