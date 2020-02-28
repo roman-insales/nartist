@@ -22,6 +22,10 @@
   <link rel="stylesheet" type="text/css" href="nartist_files/spider.css"> 
   <link rel="stylesheet" type="text/css" href="nartist_files/theme.css">
   <link rel="stylesheet" type="text/css" href="nartist_files/nartist.css">
+  <link rel="stylesheet" type="text/css" href="nartist_files/respon.css">
+  
+    <!-- стили фильтра -->
+  <link rel="stylesheet" type="text/css" href="nartist_files/ion.rangeSlider.css">
 </head>
 <body class="template-is-collection is-index-page dom-ready window-load pallette_nartist">
   <header class="nartistHeader">
@@ -164,7 +168,7 @@
   <section class="filters">
     <div class="filters_container container">
       <div class="filters__wrap"> 
-        <form class="collection-filter"> 
+        <form id="to-filter" class="collection-filter"> 
             <!-- цена -->
             <div class="filter js-filter-section is-close-container" data-tabs-container="">
               <div class="filter-title">
@@ -289,8 +293,7 @@
             </div>
         </form>
       </div>
-      
-      <button class="cell-2 button_filter" onclick="$('.filters__wrap').toggle();">Фильтры <span class="filters-icon"></span></button>
+      <button class="cell-2 button_filter" href="#to-filter" data-open-filter>Фильтры <span class="filters-icon" ></span></button>
       <div class="cell-2 button_sort">
         <select class="slct js-filter-trigger" name="order">
           <option value="" disabled="" selected="">Тип сортировки</option>
@@ -374,7 +377,39 @@
           </div>
         </li>
         <li class="product__wrap_list">
-            <div class="product">
+          <div class="product">
+            <a class="product__img_wrap"  href="#">
+                <img class="product__img" src="nartist_files/prod_1.png" alt=" " />
+            </a>
+            <div class="product__stick">New</div>
+            <div class="product__info_wrap">
+              <span class="product__inscription">Business Lady</span>
+              <a class="product__link" href="#">Nartist 005 Misty Lilac 10g</a>
+            </div>
+            <div class="product__price_block">
+              <b class="product__price">400 р.</b>
+              <span class="product__price_old">500 р.</span>
+            </div>
+            
+            <div data-quantity="" class="quantity is-basket">
+                <div class="quantity-controls product__buy">
+                    <button data-quantity-change="-1" class="quantity-control bttn-count" type="button">
+                      -
+                    </button>
+                    <input class="quantity-input" type="text" name="cart[quantity][210491053]" value="10">
+                    <button data-quantity-change="1" class="quantity-control bttn-count" type="button">
+                      +
+                    </button>
+                </div>
+            </div>
+            <b class="product__price_total">4000 р.</b>
+            <div class="product__buy_wrap">  
+                <button class="product__buy">Купить<span class="cart-icon"></span></button>
+                <a class="product__fastbuy" href="">Купить в один клик</a>
+            </div>
+            <button class="product__fav bttn-favorite not-added" type="button" title="Добавить в избранное"></button>
+          </div>
+          <div class="product_hidden">
               <a class="product__img_wrap"  href="#">
                   <img class="product__img" src="nartist_files/prod_1.png" alt=" " />
               </a>
@@ -405,42 +440,42 @@
                   <a class="product__fastbuy" href="">Купить в один клик</a>
               </div>
               <button class="product__fav bttn-favorite not-added" type="button" title="Добавить в избранное"></button>
-            </div>
-            <div class="product_hidden">
-                <a class="product__img_wrap"  href="#">
-                    <img class="product__img" src="nartist_files/prod_1.png" alt=" " />
-                </a>
-                <div class="product__stick">New</div>
-                <div class="product__info_wrap">
-                  <span class="product__inscription">Business Lady</span>
-                  <a class="product__link" href="#">Nartist 005 Misty Lilac 10g</a>
-                </div>
-                <div class="product__price_block">
-                  <b class="product__price">400 р.</b>
-                  <span class="product__price_old">500 р.</span>
-                </div>
-                
-                <div data-quantity="" class="quantity is-basket">
-                    <div class="quantity-controls product__buy">
-                        <button data-quantity-change="-1" class="quantity-control bttn-count" type="button">
-                          -
-                        </button>
-                        <input class="quantity-input" type="text" name="cart[quantity][210491053]" value="10">
-                        <button data-quantity-change="1" class="quantity-control bttn-count" type="button">
-                          +
-                        </button>
-                    </div>
-                </div>
-                <b class="product__price_total">4000 р.</b>
-                <div class="product__buy_wrap">  
-                    <button class="product__buy">Купить<span class="cart-icon"></span></button>
-                    <a class="product__fastbuy" href="">Купить в один клик</a>
-                </div>
-                <button class="product__fav bttn-favorite not-added" type="button" title="Добавить в избранное"></button>
-            </div>
+          </div>
         </li>    
         <li class="product__wrap_list">
-            <div class="product">
+          <div class="product">
+            <a class="product__img_wrap"  href="#">
+                <img class="product__img" src="nartist_files/prod_3.png" alt=" " />
+            </a>
+            <div class="product__stick">-30%</div>
+            <div class="product__info_wrap">
+              <span class="product__inscription">Business Lady</span>
+              <a class="product__link" href="#">Nartist 001 White 10g</a>
+            </div>
+            
+            <div class="product__price_block">
+                <b class="product__price">300 р.</b>
+                <span class="product__price_old">400 р.</span>
+              </div>
+            <div data-quantity="" class="quantity is-basket">
+                <div class="quantity-controls product__buy">
+                    <button data-quantity-change="-1" class="quantity-control bttn-count" type="button">
+                      -
+                    </button>
+                    <input class="quantity-input" type="text" name="cart[quantity][210491053]" value="10">
+                    <button data-quantity-change="1" class="quantity-control bttn-count" type="button">
+                      +
+                    </button>
+                </div>
+            </div>
+            <b class="product__price_total">3000 р.</b>
+            <div class="product__buy_wrap">  
+                <button class="product__buy">Купить<span class="cart-icon"></span></button>
+                <a class="product__fastbuy" href="">Купить в один клик</a>
+            </div>
+            <button class="product__fav bttn-favorite not-added" type="button" title="Добавить в избранное"></button>
+          </div>
+          <div class="product_hidden">
               <a class="product__img_wrap"  href="#">
                   <img class="product__img" src="nartist_files/prod_3.png" alt=" " />
               </a>
@@ -471,39 +506,7 @@
                   <a class="product__fastbuy" href="">Купить в один клик</a>
               </div>
               <button class="product__fav bttn-favorite not-added" type="button" title="Добавить в избранное"></button>
-            </div>
-            <div class="product_hidden">
-                <a class="product__img_wrap"  href="#">
-                    <img class="product__img" src="nartist_files/prod_3.png" alt=" " />
-                </a>
-                <div class="product__stick">-30%</div>
-                <div class="product__info_wrap">
-                  <span class="product__inscription">Business Lady</span>
-                  <a class="product__link" href="#">Nartist 001 White 10g</a>
-                </div>
-                
-                <div class="product__price_block">
-                    <b class="product__price">300 р.</b>
-                    <span class="product__price_old">400 р.</span>
-                  </div>
-                <div data-quantity="" class="quantity is-basket">
-                    <div class="quantity-controls product__buy">
-                        <button data-quantity-change="-1" class="quantity-control bttn-count" type="button">
-                          -
-                        </button>
-                        <input class="quantity-input" type="text" name="cart[quantity][210491053]" value="10">
-                        <button data-quantity-change="1" class="quantity-control bttn-count" type="button">
-                          +
-                        </button>
-                    </div>
-                </div>
-                <b class="product__price_total">3000 р.</b>
-                <div class="product__buy_wrap">  
-                    <button class="product__buy">Купить<span class="cart-icon"></span></button>
-                    <a class="product__fastbuy" href="">Купить в один клик</a>
-                </div>
-                <button class="product__fav bttn-favorite not-added" type="button" title="Добавить в избранное"></button>
-            </div>
+          </div>
           </li>
           <li class="product__wrap_list">
               <div class="product">
@@ -951,11 +954,166 @@
       </div>
     </div>
     <script src="nartist_files/jquery.js"></script>
-    <script src="nartist_files/nartist.js"></script>
     <script src="nartist_files/swiper.min.js"></script>
     <script src="nartist_files/rellax.min.js"></script>
     
+    <script src="nartist_files/nartist.js"></script>
+
     
+    <!-- скрипты каталога -->
+    <!-- <script src="nartist_files/plugin.ionRange.adapter.js"></script>
+    <script src="nartist_files/ion.rangeSlider.min.js"></script> -->
+    <script src="nartist_files/dataTabs.js"></script>
+    
+    
+    
+    <script>
+      /**
+       * COLLECTION_FILTERS
+       */
+      $(document).ready(function() {
+        // initCollectionFilter();
+
+        $(document).on("click", "[data-open-filter]", function(event) {
+          event.preventDefault();
+
+          var thisEl = $(this);
+
+          if(thisEl.hasClass('active')){
+            thisEl.removeClass('active');
+            $('[data-closed-filter]').removeClass('active');
+
+            setTimeout(function(){
+              $('.filters__wrap').removeClass('opened');
+            });
+          } else{
+            thisEl.addClass('active');
+              $('.filters__wrap').addClass('opened');
+
+            if($(window).width() >= 769){
+              var scrollTo = thisEl.attr('href');
+
+              var destination = $(scrollTo).offset().top - 120;
+              jQuery("html:not(:animated),body:not(:animated)").animate({
+                scrollTop: destination
+              }, 500);
+            }
+
+            console.log(destination);
+
+            setTimeout(function(){
+              $('[data-closed-filter]').addClass('active');
+            }, 500);
+          }
+
+        });
+
+        $(document).on("click", "[data-close-filter]", function(event){
+          event.preventDefault();
+
+          $('[data-open-filter]').removeClass('active');
+          $('[data-closed-filter]').removeClass('active');
+
+          setTimeout(function(){
+            $('[data-opened-filter]').addClass('cell-12').removeClass('cell-9');
+          }, 500);
+        });
+
+        if($(window).width() > 768){
+          $('[data-filter-active]').each(function(){
+            $('[data-open-filter]').addClass('active');
+            $('[data-opened-filter]').addClass('cell-9').removeClass('cell-12');
+
+            setTimeout(function(){
+              $('[data-closed-filter]').addClass('active');
+            }, 500);
+          });
+        }
+      });
+
+      // function initCollectionFilter() {
+      //   $(".js-filter-section").dataTabs({
+      //     state: "accordion",
+      //     useJqMethods: false
+      //   });
+      //   $(".js-filter-range-slider").rangeSlider({
+      //     force_edges: true
+      //   });
+      //   $(".js-filter-range-slider-price").rangeSlider({
+      //     force_edges: true
+      //   });
+      // }
+
+      $(function() {
+        $(document).on("change", ".js-filter-trigger", function(event) {
+          var thisEl = $(this);
+          var thisForm = thisEl.parents('form:first');
+          var defaultSize = $('.js-show-page-size').html();
+          var order_val = thisForm.find('[name="order"]').val();
+          var page_size = thisForm.find('[name="page_size"]').val();
+
+          formData = new FormData(thisForm.get(0));
+
+          if(order_val == ''){
+            $('[name="order"]').attr('disabled', 'disabled');
+          }
+          if(page_size == defaultSize){
+          $('[name="page_size"]').attr('disabled', 'disabled');
+          }
+
+          thisForm.submit();
+        });
+        $(document)
+          .on("click", "form label", function(event) {
+            var $form = $(this).parents("form:first");
+            var $filterItem = $(this).parents(".filter-item");
+            var $checkbox = $filterItem.find(":checkbox");
+
+            if ($form.hasClass("collection-filter")) {
+              event.preventDefault();
+              $checkbox.prop("checked", !$checkbox.prop("checked")).trigger("change");
+            }
+          })
+          .on("change", "input:not(.js-filter-range-placeholder), select", function(
+            event
+          ) {
+            var $form = $(this).parents("form:first");
+
+            sendFilter($form, $(this));
+          })
+          .on("click", '[type="submit"]', function(event) {
+            var $form = $(this).parents("form:first");
+
+            if ($form.hasClass("collection-filter")) {
+              event.preventDefault();
+              sendFilter($form, $(event.target));
+            }
+          })
+          .on("check", ".collection-filter", function(event) {
+            sendFilter($(this), $(this));
+          });
+
+        function sendFilter($form, $source) {
+          if (!$form.hasClass("collection-filter")) {
+            return false;
+          }
+
+          var isSubmitOnChange = $form.data("submit-onchange");
+          var isButton = $source.is("button");
+
+          if (isSubmitOnChange || isButton) {
+            $form.submit();
+          }
+        }
+      });
+
+
+      $( ".sd_dropdown-minibag" ).click(function(){ 
+          $( ".dynamic_basket" ).show( ); 
+        }, function(){ 
+          $( ".dynamic_basket" ).hide( ); 
+      });
+    </script>
     <!-- скрипты каталога и продукта -->
     <script>
         $(function(){
